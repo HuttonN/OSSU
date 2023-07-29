@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merge Sort Visualization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Merge Sort Visualization</h1>
+    <button onclick="executeAlgorithm()">Visualize Merge Sort</button>
+    <button onclick="goToPreviousStep()">Previous Step</button>
+    <button onclick="goToNextStep()">Next Step</button>
+    <div class="container">
+        <div class="code-container">
+            <pre id="code-display"><code></code></pre>
+        </div>
+        <div class="explanation-container">
+            <p id="code-explanation"></p>
+        </div>
+        <div class="visualization-container">
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
+</body>
+</html>
+
